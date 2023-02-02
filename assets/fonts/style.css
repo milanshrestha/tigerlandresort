@@ -1,0 +1,896 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'morionregular';
+    src: url('../fonts/typekit/morion-regular-webfont.eot');
+    src: url('../fonts/typekit/morion-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/typekit/morion-regular-webfont.woff2') format('woff2'),
+         url('../fonts/typekit/morion-regular-webfont.woff') format('woff'),
+         url('../fonts/typekit/morion-regular-webfont.ttf') format('truetype'),
+         url('../fonts/typekit/morion-regular-webfont.svg#morionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, a {
+    font-family: "morionregular", sans-serif;
+}
+
+h4, h5, h6 {
+    font-family: "skolar-sans-latin", sans-serif;
+}
+
+
+/* MAIN STYLES */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 1080px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    padding-top: 56px;
+}
+
+main.main-section {
+    flex: 1;
+    background-color: #fcfcf6;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* --- NAVIGATION --- */
+
+nav.navbar {
+    background-color: #fcfcf6;
+    padding: 0.6rem 1rem;
+}
+
+a.blog-logo {
+    margin-left: 3.3em;
+}
+
+/* --- JUMBOTRON --- */
+
+div.jumbotron {
+    background-color: #fcfcf6;
+    padding: 4rem 2rem 0rem 2rem;
+    margin-bottom: 0;
+}
+
+h2.introduction {
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+}
+
+div.down-arrow {
+    width: 100%;
+    max-width: 30em;
+    margin: 3em auto;
+}
+
+div.down-arrow i {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5em;
+}
+
+/* --- PORTFOLIO --- */
+
+section.portfolio {
+    background-color: #fcfcf6;
+}
+
+div.portfolio-snippets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.portfolio-snippets div {
+    display: inline-block;
+    width: 100%;
+}
+
+div.portfolio-snippets a {
+     margin: 0 auto;
+     width: 100%;
+     max-width: 2em;
+}
+
+div.portfolio-snippets div a,
+div.portfolio-snippets div a h3 {
+    display: inline-block;
+    width: 100%;
+    max-width: 5em; 
+}
+
+div.portfolio-snippets div a:hover, 
+div.portfolio-snippets div a:focus {
+    text-decoration: none;
+}
+
+div.portfolio-snippets div a h3 {
+    color: #000; 
+}
+
+div.portfolio-snippets div a:hover h3 {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+div.portfolio-snippets i {
+    display: inline-block;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 2em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+div.portfolio-snippets > a {
+    display: inline-block;
+    width: 100%;
+    max-width: 4.5em;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+}
+
+section.portfolio > div.myAcc div.row div > a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #fcfcf6;
+}
+
+section.portfolio div.card,
+section.portfolio div.card-header {
+    background-color: #fcfcf6;
+    border-radius: 0;
+    border: none;
+}
+
+/* --- PORTFOLIO SNIPPETS --- */
+
+div.card div > div.card-block {
+    margin: 1.5em;
+}
+
+/*div.card-block {
+    border-left: 1px solid #000;
+}*/
+
+section > div.myAcc div.col-sm-12 {
+    padding: 0;
+}
+
+/*section > div.myAcc > div.row ul {
+    padding-left: 1.75em;
+    margin: 1em 0 0 0.5em;
+    border-left: 1px solid #000;
+}*/
+
+section > div.myAcc > div.row {
+    display: flex;
+}
+
+section > div.myAcc > div.row div.col-md-5 {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: left;
+   align-items: left;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+/* --- COLLECTION SECTION --- */
+
+section.collection-section {
+    background-color: #fcfcf6;
+}
+
+section.collection-section > div.collection-intro {
+    text-align: center;
+    border-bottom: 18px solid #f3f3e7;
+}
+
+section.collection-section > div.collection-intro h2 {
+    padding: 0.25em 0 0.75em 0;
+}
+
+section.collection-section > div.collection-intro h5 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+section.collection-section > div.collection-intro > img {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    width: 6em;
+}
+
+/* --- PROJECT DROP DOWN --- */
+
+nav.portfolio-drop-down {
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+}
+
+nav.portfolio-drop-down h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav.portfolio-drop-down button.navbar-toggler-right {
+    bottom: 0.02em;
+} 
+
+nav.portfolio-drop-down > div.collapse-nav {
+    width: 100%;
+    max-width: 15em;
+    margin: 0 auto;
+}
+
+nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse {
+    position: absolute;
+    top: 3.05rem;
+    left: 0;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    z-index: 5;
+    background-color: #f3f3e7;
+}
+
+nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse > ul li {
+    padding: 0.5em 3em;
+}
+
+nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse > ul li:hover {
+    background-color: #cecec2;
+}
+
+/* --- PROJECTS --- */
+
+section.projects > div.container > div.row div.p-text {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+}
+
+section.projects > div.container > div.row div.p-text::first-letter {
+    font-size: 2rem;
+    font-family: "morionregular", sans-serif;
+    font-weight: 500;
+    padding-right: 0.20em;
+}
+
+section.projects > div.container > div.row > div.col-sm-12 > img {
+    background-color: #f3f3e7;
+    padding-bottom: 1.75em;
+}
+
+section.projects > div.container div.row figure figcaption h6 {
+    background-color: #f3f3e7;
+    padding: 0.5em 0.25em 0.5em 1.5em;
+}
+
+/* --- COLLECTION PROJECT POSTS --- */
+
+section.portfolio-posts {
+    background-color: #fff;
+}
+
+section.portfolio-posts div.container {
+    border-bottom: 18px solid #f3f3e7;
+}
+
+section.portfolio-posts div.row div.collection-post-text {
+    margin: 1.5em 0.75em;
+}
+
+section.portfolio-posts div.row div.collection-post-text h3 {
+    margin-bottom: 0.25em;
+}
+
+section.portfolio-posts div.row div.collection-post-text h3 > a:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+
+section.portfolio-posts div.row div h3 > a {
+    color: #000;
+}
+
+section.portfolio-posts div.col-sm-12 > h6 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5em auto;
+}
+
+section.portfolio div.row > div.col-sm-12 ul {
+    border-left: 1px solid #000;
+}
+
+/* --- BIBLIOGRAPHY --- */
+
+section.bibliography {
+    padding-top: 1.25em;
+    padding-bottom: 3.75em;
+    background-color: #fff;
+}
+
+section.bibliography div.myAcc div.card-header {
+    background-color: #fff;
+    border-bottom: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.25em 0 0 0.25em;
+    text-align: center;
+} 
+
+section.bibliography div.myAcc div.card-header a {
+    display: inline-block;
+    width: 100%;
+    max-width: 10em;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+section.bibliography div.myAcc > div.row h5 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.75em;
+}
+
+section.bibliography div.myAcc div.card-header a h6,
+section.bibliography div.myAcc div.card-header + div p {
+    text-align: center;
+}
+
+section.bibliography div.myAcc div.card-header a h6 {
+    padding-bottom: 0.25em;
+}
+
+section.bibliography div.myAcc div.card-header + div p {
+    margin-bottom: 0;
+}
+
+section.bibliography div.myAcc div.card-header a:hover h6 {
+    border-bottom: 1px dashed #000;
+    font-weight: 700;
+}
+
+section.bibliography div.myAcc div.card-header + div div.card-block {
+    padding: 0.5em 1.25em;
+}
+
+section.bibliography div.myAcc > div.row {
+    margin-top: 3em;
+}
+
+/* --- SECTION FUNDRAISING --- */
+
+section.fundraising div.row {
+    margin: 3em auto;
+}
+
+section.fundraising div.row div {
+    padding: 0;   
+}
+
+section.fundraising div.row div:nth-child(2) h3 {
+    margin: .75em auto 1em auto;
+}
+
+section.fundraising h2,
+section.fundraising h3,
+section.fundraising ul {
+    text-align: left;
+    padding-left: 0;
+}
+
+section.fundraising h2 {
+    font-family: "skolar-sans-latin", sans-serif;
+}
+
+section.fundraising ul li,
+section.fundraising ul a {
+    line-height: 1.8;
+    color: #000;
+    text-decoration: none;
+}
+
+section.fundraising ul a:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+
+section.fundraising h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+section.fundraising h3 {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* --- QUOTE --- */
+
+section.quote-img {
+    display: flex;
+    background-image: url("http://via.placeholder.com/950x2100/5b686b");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+    width: 100%;
+    height: 20em;
+}
+
+section.quote-img > div.container {
+    display: flex;
+    width: 100%;
+    max-width: 85em;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+section.quote-img > div.container figure {
+    margin: 0 auto;
+}
+
+section.quote-img figure h3 {
+    margin: 0.75em auto;
+    font-weight: 300;
+}
+
+section.quote-img figcaption {
+   text-align: right; 
+}
+
+/* --- ABOUT QWEN --- */
+
+section.about {
+    background-color: #fff;
+}
+
+section.about > div.container {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+section.about div.row div:first-child {
+    display: block;
+    width: 100%;
+    max-width: 15em;
+    margin: 1.5em auto 3em auto;  
+}
+
+section.about div.row div h2 {
+    font-family: "skolar-sans-latin", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+}
+
+section.quote-img h3,
+section.quote-img figcaption {
+    text-align: right;
+    color: #fff;
+}
+
+img.img-circle {
+    width: 100%;
+    max-width: 35em;
+    border-radius: 50%;
+}
+
+/* --- BLOG SECTION --- */
+
+section.collection-section span.blog-title-border {
+    display: block;
+    width: 100%;
+    max-width: 1.5em;
+    margin: 0.25em auto 1.25em auto;
+    border-top: 2px solid #000;
+}
+
+/* --- BLOG POSTS --- */
+
+section.blog-posts {
+    background-color: #fcfcf6;
+}
+
+section.blog-posts div.container {
+    margin-top: 1.5em;
+}
+
+section.blog-posts div.row div.col-sm-12 {
+    display: block;
+    text-align: center;
+}
+
+section.blog-posts div.row div.col-sm-12 > a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.blog-posts div.row div.col-sm-12 > a h6 {
+    border-bottom: 1px dashed #fcfcf6;
+    width: 100%;
+    max-width: 8em;
+    margin: 0 auto;
+}
+
+section.blog-posts div.row div.col-sm-12 > a:hover h6 {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+
+section.blog-posts div.row div.col-sm-12 h3 {
+    margin-bottom: 1.5em;
+}
+
+section.blog-posts div.row div.col-sm-12 h6.blog-post-date {
+    padding-top: 0.25em;
+}
+
+section.blog-posts div.row div.col-sm-12 h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 0.25em;
+}
+
+section.collection-section h6.blog-post-date {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+section.blog-posts div.row div.col-sm-12 > img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 8em;
+    margin: 0.75em 0;
+}
+
+/* --- BLOG POST --- */
+
+section.blog-post > div.container p {
+    margin: 1.5em 0;
+}
+
+section.blog-post div.row:first-child p::first-letter {
+    font-size: 2rem;
+    font-family: "morionregular", sans-serif;
+    font-weight: 500;
+    padding-right: 0.20em;
+}
+
+section.blog-post + section.portfolio-posts > div.container {
+    border-bottom: none;
+    margin-top: 0.75em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    background-color: #fff;
+}
+
+section.blog-post-title div.row {
+    display: flex;
+}
+
+section.blog-post-title div.collection-intro img {
+    width: 100%;
+    max-width: 8em;
+}
+
+section.blog-post-title div.row > div.col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.blog-post-title h6.blog-post-date {
+    margin-top: 1.5em;
+} 
+
+section.blog-post-title div.row img {
+    border-radius: 50%;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    text-align: center;
+    padding: 3em 1em;
+    color: #fff;
+    background-color: #5b686b;
+}
+
+footer h6.copyright {
+    text-transform: uppercase;
+}
+
+div.social-media div {  
+    display: inline-block;
+    margin: 1em 1.5em 1em auto;
+}
+
+div.social-media div > i {  
+    margin-right: 0.2em;
+}
+
+div.social-media div > i:last-child {  
+    margin-right: 0;
+}
+
+div.social-media div > h5 {
+    font-weight: 300;
+}
+
+div.social-media div:last-child {
+    margin-right: 0;
+}
+
+div.social-media div > i,
+div.social-media div > h5 {
+    display: inline-block;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* --- Small --- */
+
+@media (max-width: 576px) {
+    nav.navbar > div.container {
+        width: 100%;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 576px) {
+
+
+}
+
+/* --- Medium --- */
+
+@media (max-width: 768px) {
+
+    a.navbar-brand {
+        margin-right: auto;
+    }
+
+    button.navbar-toggler-right {
+        right: 0rem;
+    }
+
+    nav.main-nav > div.container div.navbar-collapse {
+        background-color: #f3f3e7;
+    }
+
+    /* --- Blog Post --- */
+
+    section.blog-post-title div.container {
+        margin-top: 0.25em;
+    }
+
+    section.blog-post > div.container div.row div.margin-bottom-half {
+        margin-bottom: 1.5em;
+    }
+
+    /* --- COLLECTION NAVIGATION --- */
+
+    button.main-btn {
+        top: 0;
+        right: 5rem;
+    }
+
+    nav.main-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav.main-nav > div.collapse-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse {
+        position: absolute;
+        top: 2.95rem;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse {
+        right: 0em;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse > ul li {
+        padding: 0.75em 7.5em 0.75em 3em;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse > ul li:hover {
+        background-color: #cecec2;
+        width: 100%;
+    }
+}
+
+
+/* --- Medium --- */
+
+@media (min-width: 768px) {
+
+    section > div.myAcc > div.row ul {
+        padding-left: 1.75em;
+        margin: 1em 0 0 0.5em;
+        border-left: 1px solid #000;
+    }
+
+    section > div.myAcc div.col-md-6 {
+        margin-bottom: 1.5em;
+    }
+
+    section > div.myAcc div.col-md-6:nth-child(7) {
+        margin-bottom: 0;
+    }
+
+    /* --- NAVIGATION FLEXBOX--- */
+
+    nav.navbar > div.container div.nav-flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.nav-flexbox ul.flex-nav-1 {
+        display: flex;
+        justify-content: flex-start; 
+    }
+
+    div.nav-flexbox a.flex-logo {
+        display: flex;
+        justify-content: center; 
+    }
+
+    div.nav-flexbox ul.flex-nav-2 {
+        display: flex;
+        justify-content: flex-end; 
+    }
+
+    div.nav-flexbox ul.flex-nav-1 li,
+    div.nav-flexbox ul.flex-nav-2 li {
+        margin-right: 1.5em;
+    }
+
+    div.nav-flexbox ul.flex-nav-1 li:last-child,
+    div.nav-flexbox ul.flex-nav-2 li:last-child {
+        margin-right: 0;
+    }
+
+    /* --- COLLECTION POSTS--- */
+
+    div.post-md-hidden {
+        display: none;
+        overflow: hidden;
+    }
+
+    section.portfolio > div.myAcc div.row div > a:hover {
+        border-bottom: 1px dashed #000;
+        text-decoration: none;
+        padding-bottom: 0;
+    }
+
+    section.portfolio-posts div.col-sm-12 > h6 {
+        text-align: left;
+    }
+
+    /* --- BLOG POSTS--- */
+
+    section.blog-posts > div.container div.row div.col-md-8 {
+        text-align: left;
+        border-left: 1px solid #000;
+        padding-left: 1.5em;
+    }
+
+    section.blog-posts div.row {
+        margin-top: 3em;
+    }
+
+    section.blog-posts div.row div.col-sm-12 > a h6 {
+        margin: 0;
+    }
+
+    /* --- BLOG POST--- */
+
+    section.blog-post-title div.row > div.col-md-8 {
+        text-align: left;
+        border-left: 1px solid #000;
+        margin: 0.75em 0 0 1.5em;
+        padding-left: 1.5em;
+    }
+
+    section.blog-post-title div.collection-intro {
+        margin-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    section.blog-post-title h6.blog-post-date {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+    }
+
+/* --- Large --- */
+
+@media (min-width: 992px) {
+    section.fundraising div.row div.border-right {
+        border-right: 1px solid #000;
+    }
+
+    div.post-md-hidden {
+        display: inline-block;
+        overflow: visible;
+    }
+
+    /* --- BIBLIOGRAPHY--- */
+
+    section.bibliography div.container > div.myAcc > div.row > div:nth-child(2) {
+        border-left: 1px solid #000;
+    }
+
+    section.bibliography div.container > div.myAcc div.card-header {
+        text-align: left;
+    }
+
+    section.bibliography div.container > div.myAcc div.card-header a {
+        max-width: 9em;
+    }
+
+    section.bibliography div.container > div.myAcc div.card-header a h6,
+    section.bibliography div.container > div.myAcc > div.row h5,
+    section.bibliography div.container > div.myAcc div.card-header + div p {
+        text-align: left;
+    }
+
+    section.bibliography div.container > div.myAcc > div.row div.portfolio-snippets,
+    section.bibliography div.container > div.myAcc div.card-header + div p {
+        margin-left: 3em;
+    }
+
+    section.bibliography div.container > div.myAcc div.card-header + div div.card-block {
+        padding: 0.25em 0 0 0.25em
+    }
+}
+
+/* --- Extra large --- */
+
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
