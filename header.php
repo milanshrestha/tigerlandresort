@@ -33,7 +33,7 @@
 			<div class="uk-container uk-container-expand">
 				<div class="uk-flex uk-flex-middle uk-flex-between">
 					<!-- Site Logo -->
-					<div class="site-branding"> 
+					<div class="site-branding bg-white ms-tgl-logo"> 
 						<?php
 						the_custom_logo();
 						if (is_front_page() && is_home()) :

@@ -128,7 +128,7 @@ a {
   width: 100%;
   /* top: 20px; */
   left: 0;
-  padding-top: 5px;
+  padding-top: 0px; /*5px*/
 }
 
 /*.hero-banner .img-bg, .hero-banner .swiper-container {
@@ -1489,4 +1489,16 @@ blockquote.floatright::before {
 .about-intro.the-contentarea,
 .about-intro.the-contentarea p {
   font-size: 19px;
+}
+/*
+ * Stylesheet by @AlwaysCoolMilan
+ */
+a.nav-link {
+	color:white;
+}
+a:hover.nav-link {
+	color:#FEA532;
+}
+.ms-tgl-logo {
+	padding:0px 5px 5px 5px;
 }
