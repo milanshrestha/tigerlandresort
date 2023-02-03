@@ -255,7 +255,7 @@ a {
   z-index: 5;
   align-items: flex-end;
   text-align: left;
-  padding-top: 20px;
+  padding-top: 15px; /*20px;*/
 }
 #hero-banner .hero-content-holder {
   background: #fea532;
@@ -1493,6 +1493,7 @@ blockquote.floatright::before {
 /*
  * Stylesheet by @AlwaysCoolMilan
  */
+ 
 a.nav-link {
 	color:white;
 }
@@ -1507,6 +1508,13 @@ a.nav-link {
 a.nav-link {
 	color:black;
   }
+  .ms-tgl-logo {
+	padding:0px;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: none; 
+	box-shadow: none;
+}
 }  
 a:hover.nav-link {
 	color:#FEA532;
