@@ -1,4 +1,4 @@
-# Deploy GIT Automatically
+# Pull GIT Update
 ---
 deployment:
   tasks:
