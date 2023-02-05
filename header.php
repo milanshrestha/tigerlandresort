@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The header for our theme
  *
@@ -10,7 +9,6 @@
  * @package tigerland
  * @AlwaysCoolMilan
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -28,8 +26,8 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-<div class="o-scroll" id="js-scroll" data-scroll-container>
-		<header id="masthead" class="site-header iat-header-absolute">
+<!-- <div class="o-scroll" id="js-scroll" data-scroll-container> -->
+		<header id="masthead" class="site-header iat-header-absolute fixed-top ms-navbar-scroll">
 			<div class="uk-container uk-container-expand">
 				<div class="uk-flex uk-flex-middle uk-flex-between">
 					<!-- Site Logo -->
@@ -55,38 +53,35 @@
 						</div>
 						
 						<!-- Site Navigation -->
-<nav id="site-navigation" class="navbar navbar-expand-md navbar-light fw-bold bg-light bg-transparent  main-navigation" role="navigation">
+<nav id="site-navigation" class="navbar navbar-expand-md navbar-light fw-bold bg-light bg-transparent main-navigation" role="navigation">
 						  <div class="container d-flex clearfix">
 						  
 							 
-													<?php
-													wp_nav_menu(
-														array(
-															'theme_location'	=> 'menu-1',
-															'menu_id'        	=> 'primary-menu',
-															'depth'             => 2, // 1 = no dropdowns, 2 = with dropdowns
-															'container'         => 'div',
-															'container_class'   => 'collapse navbar-collapse',
-															'container_id'      => 'bs-example-navbar-collapse-1',
-															'menu_class'        => 'nav nav-fill navbar-nav mr-auto',
-															'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-															'walker'            => new WP_Bootstrap_Navwalker(),
-															
-														)
-													);
-													?>
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location'	=> 'menu-1',
+									'menu_id'        	=> 'primary-menu',
+									'depth'             => 2, // 1 = no dropdowns, 2 = with dropdowns
+									'container'         => 'div',
+									'container_class'   => 'collapse navbar-collapse',
+									'container_id'      => 'bs-example-navbar-collapse-1',
+									'menu_class'        => 'nav nav-fill navbar-nav mr-auto',
+									'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+									'walker'            => new WP_Bootstrap_Navwalker(),
+									
+								)
+							);
+							?>
 										
-							
-							
-							
-									 <div class="header-right">
-														<a href="https://www.tigerlandsafarinepal.com/booking-form/" target="_blank" class="button-dark">
-															<div class="holder">
-																<span><?php echo get_field('h_button_text', 'option'); ?></span>
-																<span role="none">Book Now </span>
-															</div>
-														</a>
-									 </div>
+							<div class="header-right">
+								<a href="https://www.tigerlandsafarinepal.com/booking-form/" target="_blank" class="button-dark">
+									<div class="holder">
+										<span><?php echo get_field('h_button_text', 'option'); ?></span>
+										<span role="none">Book Now </span>
+									</div>
+								</a>
+							</div>
 							 
 							 
 							 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
@@ -100,6 +95,6 @@
 					</div>				
 				</div>
 							
-			</div>
+			<!-- </div> -->
 			
 		</header>

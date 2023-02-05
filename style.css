@@ -1490,6 +1490,7 @@ blockquote.floatright::before {
 .about-intro.the-contentarea p {
   font-size: 19px;
 }
+
 /*
  * Stylesheet by @AlwaysCoolMilan
  */
@@ -1504,6 +1505,10 @@ a.nav-link {
 	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5); 
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
 }
+.scrolled{
+	background:rgba(0, 0, 0, 0.4);
+	transition:1000ms ease;
+}
 @media screen and (max-width: 600px) {
 a.nav-link {
 	color:black;
@@ -1515,7 +1520,7 @@ a.nav-link {
 	-webkit-box-shadow: none; 
 	box-shadow: none;
 }
-}  
+}
 a:hover.nav-link {
 	color:#FEA532;
 }

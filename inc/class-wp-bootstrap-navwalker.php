@@ -19,7 +19,7 @@
 
 // Check if Class Exists.
 if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
-	/**
+	/*
 	 * WP_Bootstrap_Navwalker class.
 	 */
 	class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
