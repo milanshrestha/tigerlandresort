@@ -183,7 +183,6 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 			// Form a string of classes in format: class="class_names".
 			$class_names = join( ' ', $classes );
 			$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
-
 			/**
 			 * Filters the ID applied to a menu item's list item element.
 			 *

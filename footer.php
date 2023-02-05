@@ -70,7 +70,7 @@
 								<img src="<?php echo get_template_directory_uri() ?>/assets/img/Visa_Inc_logo.png" alt="mc-logo">
 							</div>
 							<div>
-								<img src="<?php echo get_template_directory_uri() ?>/assets/img/american_express.svg" alt="american_express">
+								<img src="<?php echo get_template_directory_uri() ?>/assets/img/american_express.png" alt="american_express">
 							</div>
 						</div>
 
