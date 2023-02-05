@@ -26,7 +26,7 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-<!-- <div class="o-scroll" id="js-scroll" data-scroll-container> -->
+<div class="o-scroll" id="js-scroll" data-scroll-container>
 		<header id="masthead" class="site-header iat-header-absolute fixed-top ms-navbar-scroll">
 			<div class="uk-container uk-container-expand">
 				<div class="uk-flex uk-flex-middle uk-flex-between">
@@ -94,7 +94,7 @@
 						
 					</div>				
 				</div>
-							
-			<!-- </div> -->
+		</header>					
+		</div>
 			
-		</header>
+		
