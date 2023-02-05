@@ -1520,6 +1520,9 @@ a.nav-link {
 	-webkit-box-shadow: none; 
 	box-shadow: none;
 }
+.fixed-top {
+	position:sticky !important;
+}
 }
 a:hover.nav-link {
 	color:#FEA532;

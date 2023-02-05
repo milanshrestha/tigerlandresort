@@ -1,0 +1,6 @@
+# Deploy GIT Automatically
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/silverliningnpl/public_html/tgl/wp-content/themes/tigerland
+    - /bin/cp -R * $DEPLOYPATH
